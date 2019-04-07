@@ -11,8 +11,8 @@ import (
 
 	"log"
 
-	"github.com/AOEpeople/vistecture/v2/model/core"
-	"github.com/AOEpeople/vistecture/v2/model/graphviz"
+	"github.com/intercloud/vistecture/model/core"
+	"github.com/intercloud/vistecture/model/graphviz"
 )
 
 type (

@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/AOEpeople/vistecture/v2/model/core"
+	"github.com/intercloud/vistecture/model/core"
 	yaml "gopkg.in/yaml.v2"
 )
 

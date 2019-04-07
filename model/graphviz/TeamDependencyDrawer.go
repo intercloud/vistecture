@@ -3,7 +3,7 @@ package graphviz
 import (
 	"strings"
 
-	model "github.com/AOEpeople/vistecture/v2/model/core"
+	model "github.com/intercloud/vistecture/model/core"
 )
 
 // EXTEND PROJECT

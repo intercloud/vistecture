@@ -14,9 +14,9 @@ import (
 
 	"path/filepath"
 
-	"github.com/AOEpeople/vistecture/v2/application"
-	"github.com/AOEpeople/vistecture/v2/model/core"
 	"github.com/gobuffalo/packr/v2"
+	"github.com/intercloud/vistecture/application"
+	"github.com/intercloud/vistecture/model/core"
 )
 
 type (

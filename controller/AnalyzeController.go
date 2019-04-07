@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AOEpeople/vistecture/v2/model/analyze"
-	"github.com/AOEpeople/vistecture/v2/model/core"
+	"github.com/intercloud/vistecture/model/analyze"
+	"github.com/intercloud/vistecture/model/core"
 )
 
 type AnalyzeController struct {

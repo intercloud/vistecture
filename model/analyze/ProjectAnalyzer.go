@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/AOEpeople/vistecture/v2/model/core"
+	"github.com/intercloud/vistecture/model/core"
 )
 
 type ProjectAnalyzer struct{}

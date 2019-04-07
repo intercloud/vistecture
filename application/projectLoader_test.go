@@ -3,7 +3,7 @@ package application_test
 import (
 	"testing"
 
-	"github.com/AOEpeople/vistecture/v2/application"
+	"github.com/intercloud/vistecture/application"
 )
 
 func TestProjectLoader_LoadProjectFromConfigFile(t *testing.T) {

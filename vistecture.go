@@ -8,11 +8,11 @@ import (
 	"path"
 	"time"
 
-	"github.com/AOEpeople/vistecture/v2/application"
-	"github.com/AOEpeople/vistecture/v2/controller"
-	"github.com/AOEpeople/vistecture/v2/controller/web"
-	"github.com/AOEpeople/vistecture/v2/model/core"
 	"github.com/gorilla/mux"
+	"github.com/intercloud/vistecture/application"
+	"github.com/intercloud/vistecture/controller"
+	"github.com/intercloud/vistecture/controller/web"
+	"github.com/intercloud/vistecture/model/core"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
@@ -221,7 +221,7 @@ func startServer(c *cli.Context) error {
 		webProjectController.DataAction(w, r, staticDocumentsFolder)
 	})
 
-	r.PathPrefix("/").HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	r.PathPrefix("").HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		webProjectController.IndexAction(w, r, localTemplateFolder)
 	})
 

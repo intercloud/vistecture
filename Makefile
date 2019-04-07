@@ -9,7 +9,7 @@ all: darwin linux windows
 
 templates:
 	packr2
-	echo "package web \n import _ \"github.com/AOEpeople/vistecture/v2/packrd\"" > controller/web/web-packr.go
+	echo "package web \n import _ \"github.com/intercloud/vistecture/packrd\"" > controller/web/web-packr.go
 	mkdir -p build-artifacts
 	zip -qr build-artifacts/templates.zip templates
 
@@ -23,7 +23,7 @@ windows: $(SOURCES) templates
 	GOOS=windows go build -o build-artifacts/vistecture.exe $(SOURCES)
 
 dockerpublish:
-	docker build --no-cache -t aoepeople/vistecture .
-	docker tag aoepeople/vistecture:latest aoepeople/vistecture:$(VERSION)
-	docker push aoepeople/vistecture:latest
-	docker push aoepeople/vistecture:$(VERSION)
+	docker build --no-cache -t intercloud/vistecture .
+	docker tag intercloud/vistecture:latest intercloud/vistecture:$(VERSION)
+	docker push intercloud/vistecture:latest
+	docker push intercloud/vistecture:$(VERSION)
